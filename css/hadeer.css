@@ -26,6 +26,9 @@ section {
 /* End Components */
 
 /* Start Header Section */
+.navbar a.navbar-brand {
+  width: 70px;
+}
 .navbar button {
   width: 50px;
 }
@@ -188,6 +191,10 @@ section {
 /* Start Footer section */
 footer {
   background-color: var(--footer-clr);
+}
+footer img.brand {
+  width: 70px;
+  
 }
 footer ul {
   width: fit-content;
