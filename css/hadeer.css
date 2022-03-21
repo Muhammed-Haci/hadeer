@@ -1,0 +1,183 @@
+:root {
+  --red-clr: #f00;
+  --blue-clr: #0a58ca;
+  --lightblue: lightblue;
+  --section-clr: #F6F9FE;
+  --title-clr: #e7f1fd;
+  --transparent-clr: rgba(255, 255, 255, 0.712);
+  --transition: 0.5s;
+  --dark-clr: rgba(0, 0, 0, 0.7);
+}
+body {
+  font-family: Cursive;
+  height: 6000px;
+}
+/* Start Components */
+.section-bg {
+  background-color: var(--section-clr);
+}
+.title-clr {
+  background-color: var(--title-clr);
+}
+/* End Components */
+
+/* Start Header Section */
+.navbar button {
+  width: 50px;
+}
+.navbar button:focus {
+  box-shadow: none;
+}
+.navbar button span {
+  display: block;
+  height: 3px;
+  margin: 5px auto;
+  transition: var(--transition);
+  background-color: var(--dark-clr);
+}
+.navbar button[aria-expanded="true"] .line1 {
+  transform: translate(-6px, 10px) rotate(45deg);
+  background-color: var(--red-clr);
+}
+.navbar button[aria-expanded="true"] .line2 {
+  transform: translateX(-15px);
+  opacity: 0;
+}
+.navbar button[aria-expanded="true"] .line3 {
+  transform: translate(-6px, -5px) rotate(-45deg);
+  background-color: var(--red-clr);
+}
+
+.navbar .navbar-nav .nav-link {
+  position: relative;
+  color: var(--dark-clr);
+  transition: var(--transition);
+}
+.navbar .navbar-nav .nav-link::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+  transition: var(--transition);
+  background-color: var(--blue-clr);
+}
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link.active {
+  color: var(--blue-clr);
+}
+.navbar .navbar-nav .nav-link:hover::before,
+.navbar .navbar-nav .nav-link:focus::before,
+.navbar .navbar-nav .nav-link.active::before {
+  width: 100%;
+}
+/* End Header Section */
+/* Start Landing Section */
+.landing {
+  position: relative;
+  background-color: lightblue;
+  background-image: url("../imgs/hero-bg.jpg");
+  background-size: cover;
+  height: calc(100vh - 86px);
+}
+.landing::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: var(--transparent-clr);
+}
+.landing .container {
+  position: relative;
+  z-index: 1;
+}
+/* End Landing Section */
+/* Start progress Section */
+.progress-bar {
+  transition: var(--transition);
+}
+/* End progress Section */
+/* Start logos Section */
+.logos img {
+  width: 100px;
+}
+/* End logos Section */
+/* Start services Section */
+.services .overlay {
+  inset: 0;
+}
+.services .box > * {
+  position: relative;
+  transition: var(--transition);
+}
+.services .box:hover .overlay {
+  top: 0 !important;
+}
+.services .box:hover svg, 
+.services .box:hover p, 
+.services .box:hover h5 {
+  color: white !important;
+}
+/* End services Section */
+/* Start slider Section */
+.slider {
+  background:var(--lightblue) url('../imgs/testimonials-bg.jpg') center center/cover;
+}
+.slider::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.slider > * {
+  position: relative;
+  z-index: 1;
+}
+#carousel {
+  height: 350px;
+}
+#carousel .carousel-item img {
+  height: 150px;
+  width: 150px;
+}
+#carousel .carousel-item img.kolo {
+  transform: rotate(-25deg);
+}
+/* End slider Section */
+/* Start portfolio section */
+.portfolio ul li {
+  cursor: pointer;
+}
+.portfolio .filtered-items a {
+  height: 350px;
+}
+.portfolio .filtered-items a img {
+  object-fit: cover;
+}
+.filtered-items > a.hidden {
+  display: none;
+}
+
+.filtered-items > a.active {
+  display: block;
+  animation: .7s shown ease-in-out;
+}
+@keyframes shown {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* End portfolio section */
+/* Start contact section */
+#contact .row svg {
+  border: 1ps dotted var(--blue-clr);
+}
+#contact form textarea {
+  resize: none;
+}
+/* End contact section */
+

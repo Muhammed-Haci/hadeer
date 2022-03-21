@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="author" content="Muhammed Hacı" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Bootstrap Template | Hadeer" />
+  <meta name="keywords" content="Html Css Templates, Hadeer" />
+  <!-- >> the website's head color: -->
+  <!-- 1- Chrome, Firefox, OS & Opera.-->
+  <meta name="theme-color" content="#10cab7" />
+  <!-- 2- Windows Phone.-->
+  <meta name="msaplication-navbutton-color" content="#10cab7" />
+  <!-- 3- Safari/OS.-->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>Hadeer</title>
+  <!--  The Website's icon:-->
+  <link rel="icon" href="imgs/icon.png" />
+  <!-- Css Files -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/hadeer.css" />
+  <link rel="stylesheet" href="css/lightgallery.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+  <!-- Start Header Section -->
+  <header class="sticky-top bg-white">
+    <nav id="navbar" class="navbar navbar-expand-md py-2 shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fs-1" href="index.html"> Hadeer</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+          <span class="line1"></span>
+          <span class="line2"></span>
+          <span class="line3"></span>
+        </button>
+        <div id="nav" class="navbar-collapse collapse">
+          <ul class="navbar-nav ms-auto fs-5">
+            <li class="nav-item mx-1">
+              <a class="nav-link active" href="#landing">Home</a>
+            </li>
+            <li class="nav-item mx-1">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item mx-1">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item mx-1">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#reveiws">Reveiws</a>
+              <ul class="dropdown-menu">
+                <a href="#수" class="dropdown-item active">수</a>
+                <a href="#sou" class="dropdown-item">Sou</a>
+                <a href="#kolo" class="dropdown-item">Kolo</a>
+              </ul>
+            </li>
+            <li class="nav-item mx-1">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item mx-1">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- End Header section -->
+  <!-- Start landing section -->
+  <main>
+    <section id="landing" class="landing d-flex justify-content-center align-items-center flex-column">
+      <div class="container">
+        <div class="content">
+          <h1>Welcome to <span class="text-primary">Hadeer</span></h1>
+          <p class="fs-4 text-muted">
+            We are team of talented designers making websites with Bootstrap
+          </p>
+          <button class="btn rounded btn-primary text-light px-3 me-3">
+            Get Started
+          </button>
+          <button class="btn btn-outline-primary rounded" data-bs-toggle="modal" data-bs-target="#modal">
+            <i class="fa-regular fa-circle-play"></i> whatch a video
+          </button>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">
+                Favorite Song:
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <object class="w-100 h-100" data="https://www.youtube.com/embed/Tbx6sLMo610"></object>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End landing section -->
+    <!-- Start About section -->
+    <section id="about" class="about py-5 section-bg">
+      <div class="container">
+        <div class="main-title text-center mb-5">
+          <span class="fs-5 rounded-pill title-clr px-3 text-primary">About</span>
+          <h2 class="h1 mt-2">
+            Find Out More <span class="text-primary">About Us</span>
+          </h2>
+          <p>
+            Ut possimus qui ut temporibus culpa velit eveniet modi omnis est
+            adipisci expedita at voluptas atque vitae autem.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 py-3" data-aos="fade-right" data-aos-duration="2000">
+            <img class="img-fluid rounded" src="imgs/about.jpg" alt="about img" />
+          </div>
+          <div class="col-lg-6 py-3" data-aos="fade-left" data-aos-duration="2000">
+            <h4>
+              Voluptatem dignissimos provident quasi corporis voluptates sit
+              assumenda.
+            </h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <article class="d-md-flex my-5 text-center text-md-start">
+              <i class="fa-solid fa-pen-to-square fa-3x text-primary mb-2"></i>
+              <div class="text ms-md-3">
+                <h5>Ullamco laboris nisi ut aliquip consequat</h5>
+                <p>
+                  Magni facilis facilis repellendus cum excepturi quaerat
+                  praesentium libre trade
+                </p>
+              </div>
+            </article>
+            <article class="d-md-flex my-5 text-center text-md-start">
+              <i class="fa fa-book-open fa-3x text-primary mb-2"></i>
+              <div class="text ms-md-3">
+                <h5>Ullamco laboris nisi ut aliquip consequat</h5>
+                <p>
+                  Magni facilis facilis repellendus cum excepturi quaerat
+                  praesentium libre trade
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Start progress section -->
+    <!-- End About section -->
+    <section class="progres py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="d-flex justify-content-between">
+              <p>Making Troubles</p>
+              <p class="progress-value"><span>0</span>%</p>
+            </div>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="d-flex justify-content-between">
+              <p>craziness</p>
+              <p class="progress-value"><span>0</span>%</p>
+            </div>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="d-flex justify-content-between">
+              <p>stupidness</p>
+              <p class="progress-value"><span>0</span>%</p>
+            </div>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="d-flex justify-content-between">
+              <p>lazziness</p>
+              <p class="progress-value"><span>0</span>%</p>
+            </div>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="d-flex justify-content-between">
+              <p>Dramatic</p>
+              <p class="progress-value"><span>0</span>%</p>
+            </div>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="d-flex justify-content-between">
+              <p>smartness</p>
+              <p class="progress-value"><span>0</span>%</p>
+            </div>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End progress section -->
+    <!-- Start counter section -->
+    <section class="counter py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-xl-3 mb-5">
+            <div
+              class="section-bg d-flex justify-content-center align-items-center flex-column p-4 rounded position-relative">
+              <div
+                class="icon position-absolute top-0 start-50 translate-middle rounded-circle bg-primary px-3 py-2 fs-3">
+                <i class="fa fa-face-smile-beam text-light"></i>
+              </div>
+              <h3 class="mt-3" data-counter="110">0</h3>
+              <h4>Happy Friends</h4>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3 mb-5">
+            <div
+              class="section-bg d-flex justify-content-center align-items-center flex-column p-4 rounded position-relative">
+              <div
+                class="icon position-absolute top-0 start-50 translate-middle rounded-circle bg-primary px-3 py-2 fs-3 mb-2">
+                <i class="fa-solid fa-diagram-project text-light"></i>
+              </div>
+              <h3 class="mt-3" data-counter="120">0</h3>
+              <h4>Sharing</h4>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3 mb-5">
+            <div
+              class="section-bg d-flex justify-content-center align-items-center flex-column p-4 rounded position-relative">
+              <div
+                class="icon position-absolute top-0 start-50 translate-middle rounded-circle bg-primary px-3 py-2 fs-3 mb-2">
+                <i class="fa-regular fa-square-info text-light"></i>
+              </div>
+              <h3 class="mt-3" data-counter="24">0</h3>
+              <h4>Support</h4>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3 mb-5">
+            <div
+              class="section-bg d-flex justify-content-center align-items-center flex-column p-4 rounded position-relative">
+              <div
+                class="icon position-absolute top-0 start-50 translate-middle rounded-circle bg-primary px-3 py-2 fs-3 mb-2">
+                <i class="fa-solid fa-hard-drive text-light"></i>
+              </div>
+              <h3 class="mt-3" data-counter="15">0</h3>
+              <h4>Work</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End counter section -->
+    <!-- Start logos section -->
+    <section class="logos section-bg pt-5 pb-3">
+      <div class="container">
+        <div class="row" data-aos="fade-up" data-aos-duration="2000">
+          <div class="col-6 col-md-4 col-lg-2 d-flex justify-content-center align-items-center mb-4">
+            <img class="img-fluid" src="imgs/client-1.png" alt="client" />
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 d-flex justify-content-center align-items-center mb-4">
+            <img class="img-fluid" src="imgs/client-2.png" alt="client" />
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 d-flex justify-content-center align-items-center mb-4">
+            <img class="img-fluid" src="imgs/client-3.png" alt="client" />
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 d-flex justify-content-center align-items-center mb-4">
+            <img class="img-fluid" src="imgs/client-4.png" alt="client" />
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 d-flex justify-content-center align-items-center mb-4">
+            <img class="img-fluid" src="imgs/client-5.png" alt="client" />
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 d-flex justify-content-center align-items-center mb-4">
+            <img class="img-fluid" src="imgs/client-6.png" alt="client" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End logos section -->
+    <!-- Start Services section -->
+    <div id="services" class="services py-5">
+      <div class="container">
+        <div class="main-title text-center mb-5">
+          <span class="fs-5 rounded-pill title-clr px-3 text-primary">Services</span>
+          <h2 class="h1 mt-2">
+            Check our<span class="text-primary"> Services</span>
+          </h2>
+          <p>
+            Ut possimus qui ut temporibus culpa velit eveniet modi omnis est
+            adipisci expedita at voluptas atque vitae autem.
+          </p>
+        </div>
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-6 col-xl-3 mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+            <div class="box position-relative overflow-hidden px-4 pb-4 shadow rounded">
+              <div class="overlay position-absolute bg-primary top-100"></div>
+              <div class="d-flex justify-content-center mb-4">
+                <i class="fa-solid fa-hand-holding fa-3x text-primary"></i>
+              </div>
+              <h5>Lorem, ipsum dolor.</h5>
+              <p class="text-muted lh-lg">
+                Voluptatum deleniti atque corrupti quos dolores et quas
+                molestias excepturi
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3 mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+            <div class="box position-relative overflow-hidden px-4 pb-4 shadow rounded">
+              <div class="overlay position-absolute bg-primary top-100"></div>
+              <div class="d-flex justify-content-center mb-4">
+                <i class="fa-solid fa-hand-holding fa-3x text-primary"></i>
+              </div>
+              <h5>Lorem, ipsum dolor.</h5>
+              <p class="text-muted lh-lg">
+                Voluptatum deleniti atque corrupti quos dolores et quas
+                molestias excepturi
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3 mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+            <div class="box position-relative overflow-hidden px-4 pb-4 shadow rounded">
+              <div class="overlay position-absolute bg-primary top-100"></div>
+              <div class="d-flex justify-content-center mb-4">
+                <i class="fa-solid fa-hand-holding fa-3x text-primary"></i>
+              </div>
+              <h5>Lorem, ipsum dolor.</h5>
+              <p class="text-muted lh-lg">
+                Voluptatum deleniti atque corrupti quos dolores et quas
+                molestias excepturi
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3 mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
+            <div class="box position-relative overflow-hidden px-4 pb-4 shadow rounded">
+              <div class="overlay position-absolute bg-primary top-100"></div>
+              <div class="d-flex justify-content-center mb-4">
+                <i class="fa-solid fa-hand-holding fa-3x text-primary"></i>
+              </div>
+              <h5>Lorem, ipsum dolor.</h5>
+              <p class="text-muted lh-lg">
+                Voluptatum deleniti atque corrupti quos dolores et quas
+                molestias excepturi
+              </p>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </div>
+    <!-- End Services section -->
+    <!-- Start Slider section -->
+    <div id="reveiws" class="slider py-2 position-relative">
+      <div class="container">
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true"
+              aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner h-100">
+            <div id="수" class="carousel-item h-100 active">
+              <img src="imgs/수.png" class="d-block mx-auto rounded-circle mt-5" alt="testimonials" />
+              <div class="carousel-caption d-none d-md-block mx-auto">
+                <h5>수</h5>
+                <p>
+                  Some representative placeholder content for the third slide.
+                </p>
+              </div>
+            </div>
+            <div id="sou" class="carousel-item h-100">
+              <img src="imgs/sou.jpg" class="d-block mx-auto rounded-circle mt-5" alt="testimonials" />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Sou</h5>
+                <p>
+                  Some representative placeholder content for the second
+                  slide.
+                </p>
+              </div>
+            </div>
+            <div id="kolo" class="carousel-item h-100">
+              <img src="imgs/kolo.jpg" class="d-block mx-auto rounded-circle mt-5 kolo" alt="testimonials" />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Kolo</h5>
+                <p>
+                  Some representative placeholder content for the first slide.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- End Slider section --> 
+    <!-- Start portfolio section -->
+    <div id="portfolio" class="py-5">
+      <div class="container">
+        <div class="main-title text-center mb-5">
+          <span class="fs-5 rounded-pill title-clr px-3 text-primary">Portfolio</span>
+          <h2 class="h1 mt-2">
+            Check our <span class="text-primary">Portfolio</span>
+          </h2>
+          <p> 
+            Ut possimus qui ut temporibus culpa velit eveniet modi omnis est
+            adipisci expedita at voluptas atque vitae autem.
+          </p>
+        </div>
+        <ul class="list-group list-group-horizontal justify-content-center">
+          <li class="list-group-item active" data-filter="all">All</li>
+          <li class="list-group-item app" data-filter="app">App</li>
+          <li class="list-group-item" data-filter="photo">Photo</li>
+          <li class="list-group-item" data-filter="web">Web</li>
+        </ul>
+        <div id="filter" class="row filtered-items mt-5 justify-content-center" data-aos="fade-up" data-aos-duration="1500">
+          <a class="col-md-6 col-lg-4 app all mb-3" href="imgs/portfolio-2.jpg">
+            <img class="img-fluid p-2 shadow" src="imgs/portfolio-2.jpg" alt="portfolio" />
+          </a> 
+          <a class="col-md-6 col-lg-4 app all mb-3" href="imgs/portfolio-2.jpg">
+            <img class="img-fluid p-2 shadow" src="imgs/portfolio-2.jpg" alt="portfolio" />
+          </a>
+          <a class="col-md-6 col-lg-4 photo all mb-3" href="imgs/portfolio-2.jpg">
+            <img class="img-fluid p-2 shadow" src="imgs/portfolio-2.jpg" alt="portfolio" />
+          </a>
+          <a class="col-md-6 col-lg-4 photo all mb-3" href="imgs/portfolio-2.jpg">
+            <img class="img-fluid p-2 shadow" src="imgs/portfolio-2.jpg" alt="portfolio" />
+          </a>
+          <a class="col-md-6 col-lg-4 web all mb-3" href="imgs/portfolio-2.jpg">
+            <img class="img-fluid p-2 shadow" src="imgs/portfolio-2.jpg" alt="portfolio" />
+          </a>
+          <a class="col-md-6 col-lg-4 web all mb-3" href="imgs/portfolio-2.jpg">
+            <img class="img-fluid p-2 shadow" src="imgs/portfolio-2.jpg" alt="portfolio" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- End portfolio section -->
+    <!-- Start contact section -->
+    <section id="contact" class="py-5">
+      <div class="container">
+        <div class="main-title text-center mb-5">
+          <span class="fs-5 rounded-pill title-clr px-3 text-primary">Contact</span>
+          <h2 class="h1 mt-2">
+            Don't Forget to <span class="text-primary">Contact Us</span>
+          </h2>
+          <p>
+            Ut possimus qui ut temporibus culpa velit eveniet modi omnis est
+            adipisci expedita at voluptas atque vitae autem.
+          </p>
+        </div>
+        <div class="row" data-aos="fade-left" data-aos-duration="1500">
+          <div class="col-lg-6 mb-4 text-md-center text-lg-start">
+            <div class="text-muted shadow p-4 rounded">
+              <i class="fa-solid fa-location-arrow fa-3x text-primary mb-3"></i>
+              <h5>Our Address</h5>
+              <h6>A108 Adam Street, New York, NY 535022</h6>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-4 text-md-center">
+            <div class="text-muted shadow p-4 rounded">
+              <i class="fa-solid fa-layer-group fa-3x text-primary mb-3"></i>
+              <h5>Our Address</h5>
+              <h6>A108 Adam Street, New York, NY 535022</h6>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-4 text-md-center">
+            <div class="text-muted shadow p-4 rounded">
+              <i class="fa-solid fa-signs-post fa-3x text-primary mb-3"></i>
+              <h5>Our Address</h5>
+              <h6>A108 Adam Street, New York, NY 535022</h6>
+            </div>
+          </div>
+
+          <!-- Start form and map -->
+          <div class="col-lg-6 mb-3" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="400">
+            <iframe class="border-0 p-2 shadow"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110549.0324127986!2d31.417419219067575!3d30.017996248333898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145822cffcd270e7%3A0x98b73d687889fd8!2zTmV3IENhaXJvLCBLYWhpcmUsIE3EsXPEsXI!5e0!3m2!1str!2str!4v1647814859180!5m2!1str!2str"
+              width="100%" height="340" allowfullscreen="" loading="lazy">
+            </iframe>
+          </div>
+          <div class="col-lg-6">
+            <form action="" autocomplete="on" data-aos="fade-right" data-aos-duration="1500">
+              <div class="row mb-3">
+                <div class="col-sm-6 mb-3 mb-sm-0">
+                  <input class="form-control" type="text" name="fname" placeholder="Your Name" required />
+                </div>
+                <div class="col-sm-6">
+                  <input class="form-control" type="email" name="email" placeholder="Your Email" required />
+                </div>
+              </div>
+              <input class="form-control mb-3" type="text" name="object" placeholder="Your Object" required />
+              <textarea class="form-control resize-none" name="message" placeholder="Your Message.." cols="15" rows="6"
+                required></textarea>
+              <input class="btn btn-primary mt-3" type="submit" value="Send Message" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End contact section -->
+  </main>
+  <!-- Start Footer section -->
+
+  <!-- End Footer section -->
+  <script src="js/scrollout.js"></script>
+  <script src="js/lightgallery.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/all.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+  <!-- <script src="js/main.js"></script> -->
+</body>
+
+</html>
