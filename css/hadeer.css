@@ -87,6 +87,7 @@ section {
   background-color: lightblue;
   background-image: url("../imgs/hero-bg.jpg");
   background-size: cover;
+  object-fit: cover;
   height: calc(100vh - 86px);
 }
 .landing::after {
