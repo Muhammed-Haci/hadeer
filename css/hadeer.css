@@ -6,7 +6,7 @@
   --title-clr: #e7f1fd;
   --txt-clr: #6c757d;
   --footer-clr: #191919;
-  --transparent-clr: rgba(255, 255, 255, 0.712);
+  --transparent-clr: rgba(255, 255, 255, 0.39);
   --transition: 0.5s;
   --dark-clr: rgba(0, 0, 0, 0.7);
 }
@@ -133,7 +133,7 @@ section {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: var(--dark-clr);
 }
 .slider > * {
   position: relative;
@@ -155,7 +155,7 @@ section {
   cursor: pointer;
 }
 .portfolio .filtered-items a {
-  height: 350px;
+  height: 240px;
 }
 .portfolio .filtered-items a img {
   object-fit: cover;

@@ -7,8 +7,8 @@ $message= $_POST['message'];
 $to = "naeefhjee@gmail.com";
 $subject = "Mail From Hadeer website";
 $txt ="Name = ". $name . "\r\n  Email = " . $email . "\r\n Object =" . $object . "\r\n Message =" . $message;
-$headers = "From: noreply@yoursite.com" . "\r\n" .
-"CC: somebodyelse@muhammed-haci.github.io/hadeer";
+$headers = "From: noreply@https://muhammed-haci.github.io/hadeer" . "\r\n" .
+"CC: somebodyelse@hadeer.github.io";
 if($email!=NULL){
     mail($to,$subject,$txt,$headers);
 }
