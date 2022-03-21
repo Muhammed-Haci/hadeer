@@ -100,6 +100,26 @@ section {
   z-index: 1;
 }
 /* End Landing Section */
+/* Start Scroll up */
+.scroll-up {
+  display: none;
+  position: fixed;
+  color: #fff;
+  height: 40px;
+  width: 40px;
+  right: 20px;
+  bottom: 20px;
+  border: none;
+  cursor: pointer;
+  z-index: 5;
+  border-radius: 10px;
+  transition: 0.5s;
+  background-color: #28699ee0;
+}
+.scroll-up:hover {
+  background-color: #008cff;
+}
+/* End Scroll up */
 /* Start progress Section */
 .progress-bar {
   transition: var(--transition);

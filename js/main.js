@@ -52,32 +52,49 @@ window.addEventListener("scroll", function () {
   }
 });
 
-
 /*************Filter Items ***********/
 const filterListItems = document.querySelectorAll(".list-group li"),
   filteredItems = document.querySelectorAll(".filtered-items a");
 
-filterListItems.forEach(list => {
+filterListItems.forEach((list) => {
   list.addEventListener("click", () => {
     document.querySelector(".list-group li.active").classList.remove("active");
     list.classList.add("active");
     let FilteredValue = list.dataset.filter;
-    filteredItems.forEach(item => {
+    filteredItems.forEach((item) => {
       if (item.classList.contains(FilteredValue)) {
-        item.classList.remove("hidden")
-        item.classList.add("active")
+        item.classList.remove("hidden");
+        item.classList.add("active");
+      } else {
+        item.classList.remove("active");
+        item.classList.add("hidden");
       }
-      else {
-        item.classList.remove("active")
-        item.classList.add("hidden")
-      }
-
-    })
-  })
-})
+    });
+  });
+});
 
 //Light Gallery
 lightGallery(document.getElementById("filter"), {});
 
 // init AOS
 AOS.init();
+
+// --------- scroll to the top Function:
+
+let scrollUp = document.querySelector(".scroll-up");
+
+window.onscroll = function () {
+  if (window.scrollY >= 600) {
+    scrollUp.style.display = "block";
+  } else {
+    scrollUp.style.display = "none";
+  }
+};
+
+scrollUp.onclick = function () {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
+};
